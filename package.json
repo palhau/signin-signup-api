@@ -19,7 +19,6 @@
   "homepage": "https://github.com/palhau/singin-signup-api#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "connect-timeout": "^1.9.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "install": "^0.13.0",
