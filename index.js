@@ -27,4 +27,6 @@ app.use('/api/login', authRoute);
 app.use('/api/register', registerRoute);
 app.use('/api/search', searchUser);
 
-app.listen(3000, () => console.log('Server Up and running'));
+app.listen(process.env.PORT || 3000, () =>
+  console.log('Server Up and running'),
+);
