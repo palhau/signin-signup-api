@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 
 const phoneSchema = new mongoose.Schema({
   number: {
-    type: String,
+    type: Number,
     required: false,
     min: 9,
   },
-  ddd: { type: String, required: false, min: 2 },
+  ddd: { type: Number, required: false, min: 2 },
 });
 
 module.exports = mongoose.model('Phones', phoneSchema);
