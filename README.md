@@ -51,6 +51,7 @@ For more informations visit the Documentation (https://documenter.getpostman.com
 * [JsonWebToken](https://www.npmjs.com/package/jsonwebtoken) - Used to generate the auth-token
 * [BcryptJS](https://www.npmjs.com/package/bcryptjs) - Used to hash the password
 * [Joi](https://joi.dev/) - For data validation
+* [Mongoose](https://mongoosejs.com/) - Used to Model criation
 * [MongoDB](https://www.mongodb.com/) - The databse used
 * [NPM](https://www.npmjs.com/) - Dependency Management
 
