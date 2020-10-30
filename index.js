@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
+const timeout = require('connect-timeout');
 
 //Import Routes
 const authRoute = require('./routes/login');
@@ -21,6 +22,9 @@ mongoose.connect(
 
 //Middleware
 app.use(express.json());
+
+//Timeout
+app.use(timeout('5s'));
 
 // Route Middlewares
 app.use('/api/login', authRoute);

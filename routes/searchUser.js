@@ -10,8 +10,7 @@ router.get('/:userEmail', verify, (req, res) => {
     })
     .catch((err) => {
       res.status(500).json({
-        message:
-          err.message || 'Some error ocurred while retrieving the drivers.',
+        message: err.message || 'Some error ocurred while retrieving the user.',
       });
     });
 });
