@@ -2,7 +2,7 @@ const router = require('express').Router();
 const User = require('../model/User');
 const verify = require('../middlewares/verifyToken');
 
-router.get('/:userEmail', verify, (req, res) => {
+router.get('/:userEmail', verify, async (req, res) => {
   User.findOne({ email: req.params.userEmail })
     .then((user) => {
       user === null && res.status(404).send('User not Found!');
