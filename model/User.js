@@ -1,5 +1,16 @@
 const mongoose = require('mongoose');
 
+const phoneSchema = new mongoose.Schema({
+  number: {
+    type: String,
+    required: false,
+    min: 9,
+  },
+  ddd: { type: String, required: false, min: 2 },
+});
+
+module.exports = mongoose.model('Phones', phoneSchema);
+
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -16,11 +27,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     min: 8,
   },
-  phone: {
-    type: Number,
-    required: false,
-    min: 11,
-  },
+  phones: [phoneSchema],
   createDate: {
     type: Date,
     default: Date.now,
