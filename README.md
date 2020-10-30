@@ -16,7 +16,7 @@ Create a .env file with your own environment variables.
 
 Then you can run the following command an access all routes:
 ```
-npm install
+npm start
 ```
 
 ### Usage
