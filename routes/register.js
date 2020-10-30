@@ -26,9 +26,7 @@ router.post('/', async (req, res) => {
     const user = new User({
       name: req.body.name,
       email: req.body.email,
-      phones: [
-        { number: req.body.phones[0].number, ddd: req.body.phones[0].ddd },
-      ],
+      phones: [{ number: req.body.phones.number, ddd: req.body.phones.ddd }],
       password: hashedPassword,
     });
 
